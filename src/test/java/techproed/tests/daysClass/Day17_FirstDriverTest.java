@@ -18,4 +18,4 @@ public class Day17_FirstDriverTest {
         Driver.closeDriver();
     }
 }
- //githubda gormek icin deneme yazisi bu
+ //"note1"
