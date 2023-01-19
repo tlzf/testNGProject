@@ -1,4 +1,4 @@
-package techproed.tests;
+package techproed.pages;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
