@@ -29,4 +29,5 @@ public class MedunnaPatientsPage {
     @FindBy(id = "save-entity")
     public WebElement saveButton;
 
+
 }
