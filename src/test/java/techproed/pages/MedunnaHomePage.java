@@ -23,10 +23,4 @@ public class MedunnaHomePage {
     @FindBy(linkText = "Patient")
     public WebElement patientSection;
 
-
-
-
-
-
-
 }

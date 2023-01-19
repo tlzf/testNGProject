@@ -1,15 +1,14 @@
-package techproed.tests.daysClass;
+package techproed.tests;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import techproed.pages.MedunnaHomePage;
 import techproed.pages.MedunnaLoginPage;
 import techproed.pages.MedunnaPatientsPage;
-import techproed.utilities.ConfigReader;
-import techproed.utilities.Driver;
-import techproed.utilities.JSUtils;
+import techproed.utilities.*;
 
-public class MedunnaPatient {       //bu dersde excelden data alarak yaptigimiz ornegi MedunnaPatientsPage_2Excel class da yaptim
+public class MedunnaPatientsPage_2Excel {
     //Admin can create patients
     /*
     Given
@@ -47,13 +46,19 @@ public class MedunnaPatient {       //bu dersde excelden data alarak yaptigimiz 
     @DataProvider
     public Object[][] medunnaCredentials(){
 
-        Object[][] arr ={
-                {"john_doe11","John.123","Mark", "Twain", "mark@twain.com", "1234567890" },
-                {"john_doe12","John.123","Mark", "Twain", "mark@twain.com", "1234567890"},
-                {"john_doe13","John.123","Mark", "Twain", "mark@twain.com", "1234567890"},
-                {"john_doe14","John.123","Mark", "Twain", "mark@twain.com", "1234567890"},
-                {"john_doe15","John.123","Mark", "Twain", "mark@twain.com", "1234567890"}
-        };  //john_doe11   John.123   Mark   Twain  mark@twain.com 1234567890
+        ExcelUtils excelUtils = new ExcelUtils("src/test/java/resources/MedunnaCredentials.xlsx","medunna01");
+
+
+        Object[][] arr = excelUtils.getDataArrayWithoutFirstRow();
+
+
+//        {//Not Recommended
+//                {"john_doe11","John.123","Mark", "Twain", "mark@twain.com", "1234567890"},
+//                {"john_doe12","John.123","Mark", "Twain", "mark@twain.com", "1234567890"},
+//                {"john_doe13","John.123","Mark", "Twain", "mark@twain.com", "1234567890"},
+//                {"john_doe14","John.123","Mark", "Twain", "mark@twain.com", "1234567890"},
+//                {"john_doe15","John.123","Mark", "Twain", "mark@twain.com", "1234567890"}
+//        };
 
 
         return arr;
@@ -62,7 +67,7 @@ public class MedunnaPatient {       //bu dersde excelden data alarak yaptigimiz 
 
 
     @Test(dataProvider ="medunnaCredentials" )
-    public void createPatientTest(String username, String password, String pFirstname, String pLastname, String pEmail, String pPhoneNumber ){
+    public void createPatientTest(String username, String password, String pFirstname, String pLastname, String pEmail, String pPhoneNumber){
 //        Go to https://medunna.com/
         Driver.getDriver().get(ConfigReader.getProperty("medunna_url"));
 
@@ -111,7 +116,12 @@ public class MedunnaPatient {       //bu dersde excelden data alarak yaptigimiz 
 //        Click on "Save" button
         JSUtils.clickElementByJS(medunnaPatientsPage.saveButton);
 
-        Driver.closeDriver();
-
     }
+
+    @AfterMethod
+    public void closeBrowser(){
+        ReusableMethods.waitFor(3);
+        Driver.closeDriver();
+    }
+
 }
