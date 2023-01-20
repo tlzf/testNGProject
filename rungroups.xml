@@ -3,7 +3,9 @@
     <test name="Minor Regression Test Group">
         <groups>
             <run>
-                <!--            GROUP NAME = minor-regression-group
+                <!--            GROUP NAME = minor-regression-group///istedigini ver hoca bu ismi verdi
+                                hangi ismi verdiysek bu isimleri istedigimiz @test()parantez acip icine bu ismi  yaziyoruz
+                                istedigin classdaki istedigin @test e ekleyebilirsin.
                                 This xml file executes all @Test methods which has minor-regression-group
                                 from ALL package-->
                 <include name="minor-regression-group"  />

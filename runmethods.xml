@@ -9,7 +9,7 @@
                     <include name="test6" />
                 </methods>
             </class>
-            <class name="techproed.tests.smoketest.logintests.Day18_PositiveLoginTest">
+            <class name="techproed.tests.smoketest.logintests.logintestss.Day18_PositiveLoginTest">
                 <methods>
                     <!--                RUN ALL BUT US100208_Negative_Login FROM Day18_PositiveLoginTest-->
                     <exclude name="US100208_Negative_Login" />
@@ -18,3 +18,8 @@
         </classes>
     </test>
 </suite>
+
+        <!--
+        preserve-order=false dersen rastgele/true dersen yukardan asagi yapiyor
+
+        -->

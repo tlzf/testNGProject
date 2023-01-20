@@ -9,4 +9,11 @@
         <!--SUITE > TEST > PACKAGE > GROUPS > CLASSES > CLASS > METHODS > INCLUDE OR EXCLUDE
         verbose = The amount of info. The bigger number the more info.
         <package name="techproed.tests.smoketest"/> -> RUNS ALL SMOKETEST PACKAGE
+        //suite name==istedigin ismi ver.run yapinca consolun entepesinde verdgn bu ismi goreceksin
+        //test name==hangi test olacak bu senin,smokemu regression mi?isim ver
+        //package name(path bu)==which package we want to run.yesil javaaltindan basla icine kadar git.nokta koydukca icerigi acilir ice dogru secersin
+        //save yapmayi unutma calistirmadan once!!
+       //page in icinde package varsa calismaz.tek package olmali yada onunda icine dogru gidebilirsin
+
+
          -->

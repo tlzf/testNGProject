@@ -62,7 +62,7 @@ public class Day16_Annotations {
     public void test4(){
         System.out.println("test4");
     }
-    @Test(priority = 1,groups = "minor-regression-group")
+    @Test(priority = 1,groups = "minor-regression-group")  //groups = "minor-regression-group ==>bunlari grouprun a ekledik ordaki ismi ekleyince o isme sahip olanlar birlikte calisiyor
     public void test5(){
         System.out.println("test5");
     }

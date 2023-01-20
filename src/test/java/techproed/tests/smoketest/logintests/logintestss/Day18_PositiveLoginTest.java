@@ -1,4 +1,4 @@
-package techproed.tests.smoketest.logintests;
+package techproed.tests.smoketest.logintests.logintestss;
 
 import org.testng.annotations.Test;
 import techproed.pages.HomePage;
