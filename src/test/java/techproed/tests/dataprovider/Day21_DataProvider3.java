@@ -28,7 +28,10 @@ public class Day21_DataProvider3 {
 //        USE ONE OF THE EXCEL UTIL METHOD TO RECEIVE THE DATA FROM THE EXCEL
 
         Object [][] customerCredentials = excelUtils.getDataArrayWithoutFirstRow();
-//        Object [][] customerCredentials = {
+//        Object [][] customerCredentials = {                            //bukisma ihtiyac yok cunku excelden alicaz datalari.excelden almak icinde
+                                                                         //path i al sheet i al ve sonra excel util lazim intract yapmak icin sunu yap ExcelUtils excelUtils=new ExcelUtils(path,sheetName);
+                                                                         //excelutilde 2d array return yapan methodu cagir oda firstrowmetodu cunku headeri istemyrm
+                                                                         //sonra bunu object arraye koy.
 //                {"sam.walker@bluerentalcars.com","c!fas_art"},
 //                {"kate.brown@bluerentalcars.com","tad1$Fas"},
 //                {"raj.khan@bluerentalcars.com","v7Hg_va^"},
