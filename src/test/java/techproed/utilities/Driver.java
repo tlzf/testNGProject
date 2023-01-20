@@ -34,7 +34,7 @@ public class Driver {
 //            NOTE: sel 4.5
 //            driver = WebDriverManager.chromedriver().create();     //hoca bunu kapatti cunku driver hmn kapanyrdu.busekilde manuel kapatiyorsun
         }
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
         driver.manage().window().maximize();
         return driver;

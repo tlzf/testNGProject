@@ -9,7 +9,7 @@ import techproed.utilities.ExcelUtils;
 import techproed.utilities.ReusableMethods;
 import java.util.List;
 import java.util.Map;
-public class Day20_ExcelLogin {
+public class Day20_ExcelLogin {               //biz bu classda dataprovideri kullanicaz methodla
     HomePage homePage;
     LoginPage loginPage;
     ExcelUtils excelUtils;
@@ -52,7 +52,7 @@ public class Day20_ExcelLogin {
 //        System.out.println(excelUtils.getColumnsNames());
 //        System.out.println(excelUtils.getCellData(2,1));
 //        USING LOOP GET THE VALUES FROM THE MAP AND SEND IN THE UI
-        for (Map<String,String> eachData :allTestData){
+        for (Map<String,String> eachData :allTestData){                //burda loop yapiyorsun dataproviderda gerek yok
 //            Takes us to the login page
             login();
             loginPage.userName.sendKeys(eachData.get("username")); //key value eslemesinden keyi yazdinmi value yu getirecek sana

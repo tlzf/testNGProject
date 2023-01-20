@@ -22,7 +22,7 @@ public class Day21_DataProvider2 {
         return customerCredentials;
     }
     //    1. Create a login method
-    public void login(){
+    public void login(){                  //bu method login yapiyor sen testin icinde send keysleri yapacaksin package lere gore
         Driver.getDriver().get(ConfigReader.getProperty("app_home_url"));
         homePage = new HomePage();
         loginPage =new LoginPage();
@@ -47,8 +47,8 @@ public class Day21_DataProvider2 {
         ReusableMethods.waitFor(1);
     }
     @Test(dataProvider = "customerData")
-    public void customerLoginTest(String username, String password){
-//            Takes us to the login page
+    public void customerLoginTest(String username, String password){    //providerdan hangi parametreleri alacaksak ona gore buraya yazmamiz lazim
+//            Takes us to the login page                                //lambda gibi kendi loop yapiyor,username ve passwordleri aliyor
         login();
         loginPage.userName.sendKeys(username);
         ReusableMethods.waitFor(1);

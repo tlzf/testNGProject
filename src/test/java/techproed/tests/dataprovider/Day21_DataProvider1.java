@@ -34,6 +34,7 @@ public class Day21_DataProvider1 {
         System.out.println("USERNAME : "+username+" | PASSWORD : "+password);
     }
     //   TEST METHOD 2
+    // bu calismayacak cunku isim customer data degil dataprovider methodun adi artik.ustteki calisir
     @Test(dataProvider = "customerData")
     public void dataProviderTest2(String user,String pass){
         System.out.println(user+" | "+pass);
