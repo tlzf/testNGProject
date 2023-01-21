@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
+
+
+    <listeners>
+        <!-- LISTENER EKLEDIK CREATE YAPTIGIMIZ XML E -->
+        <listener class-name="techproed.utilities.Listeners"></listener>
+    </listeners>
     <test verbose="2" preserve-order="true"
-          name="/Users/techproed/IdeaProjects/testNGProject/src/test/java/techproed/tests/listeners/ListenersTest3.java">
+          name="/Users/faziletcetin/IdeaProjects/testNGProject/src/test/java/techproed/tests/listeners/ListenersTest3.java">
         <classes>
             <class name="techproed.tests.listeners.ListenersTest3">
                 <methods>
-                    <include name="US100201_Admin_Login"/>
+                    <include name="US100201_Admin_Login"/>  //listenertest3 deki bu name deki ni run yapiyoruz
                 </methods>
             </class>
         </classes>

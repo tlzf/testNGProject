@@ -1,5 +1,12 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Blue Rental Car Project" verbose="1" >
+
+<!--    <listeners>-->
+<!--        &lt;!&ndash; LISTENER EKLEDIK CREATE YAPTIGIMIZ XML E &ndash;&gt;-->
+<!--        <listener class-name="techproed.utilities.Listeners"></listener>-->
+<!--    </listeners>-->
+<!--    -->     <!-- bukismi kullanima acabilirsin eger listenerla calistirmak istiyorsan-->
+
     <test name="Regression Test">
         <packages>
             <!--            run all packages that has @Test annotation-->

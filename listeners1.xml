@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Blue Rental Car" verbose="1">
-    <!--        listener tag is used to add Listeners-->
+    <!--        listener tag is used to add Listeners,test2 classi yada classlarla connect yapmak icin-->
     <listeners>
         <!--        Path of the Listener Utility class-->
         <listener class-name="techproed.utilities.Listeners"></listener>
@@ -8,8 +8,9 @@
 
     <test name="Login Test Classes" >
         <classes>
-            <!--            RUNNING ListenersTest2 class-->
+            <!--           asagidaki  RUNNING ListenersTest2 class,burda test2 ile baglanti kurdurttugumuz icin orda uzun uzun path yazmiyoruz otomatik aliyor burdan path i-->
             <class name="techproed.tests.listeners.ListenersTest2" />
         </classes>
     </test>
 </suite>
+

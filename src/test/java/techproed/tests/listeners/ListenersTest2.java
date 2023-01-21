@@ -4,8 +4,8 @@ import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.Test;
 import techproed.utilities.Driver;
-//ADD LISTENER UTIL PATH IN THE XML FILE
-public class ListenersTest2 {
+//ADD LISTENER UTIL PATH IN THE XML FILE  burda test1 deki gibi yazmiyoruz xml file A ekledik ordan aliyoruz PATH I
+public class ListenersTest2 {    //bu classi xml de bagladik,istedigin classlari baglayabilirsin isim falan ekleyip degistirerek
     @Test
     public void test1(){
         System.out.println("Test case 1 PASS");

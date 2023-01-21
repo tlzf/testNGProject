@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import techproed.utilities.Driver;
 //USE @LISTENER ANNOTATION TO CONNECT TEST CLASS TO THE LISTENERS
 //techproed.utilities.Listeners.class -> PATH OF LISTENERS UTILITY
-@Listeners(techproed.utilities.Listeners.class)
+@Listeners(techproed.utilities.Listeners.class)  //path i bu ,tecpronun utilits paketinin icindeki class.  nokta koyarak bul path i
 public class ListenersTest1 {
     @Test
     public void test1(){
