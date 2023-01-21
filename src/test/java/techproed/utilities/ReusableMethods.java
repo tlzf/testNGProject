@@ -239,3 +239,7 @@ public class ReusableMethods {
         }
     }
 }
+
+
+///String target = System.getProperty("user.dir") + "/test-output/Screenshots/" + date + ".png";
+//hoca screen shutda busekilde degistirdi windows tanimadi cunku alternatif olarak getscreenshut methoduna ekle bukismi
